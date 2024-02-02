@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 //student class
 class Student{
@@ -54,7 +54,7 @@ class Student{
         }
     }
 
-    //to find the lowest mark amont all subjects
+    //to find the lowest mark among all subjects
     void lowest(){
         lowest = math;
         if(lowest > science){
@@ -67,7 +67,7 @@ class Student{
             lowest = hindi;
         }
         if(lowest > socialScience){
-            lowest = hindi;
+            lowest = socialScience;
         }
 
     }
@@ -94,7 +94,7 @@ class Test{
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
         int num;
-        System.out.print("Result of How many students ???: ");
+        System.out.print("Result of How many students ??? : ");
         num = sc.nextInt();
         Student arr[] = new Student[num];
         for(int i = 0; i < num; i++){
